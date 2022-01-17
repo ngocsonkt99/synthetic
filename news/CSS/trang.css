@@ -1,0 +1,79 @@
+﻿
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+li :hover a {
+    color: seashell;
+}
+
+.jumbotron {
+    margin-top: -30px;
+    background-color: whitesmoke;
+}
+
+.col-md-4 {
+    padding-bottom: 50px;
+}
+
+#red {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron h1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+    .navbar li a, .navbar .navbar-brand {
+        color: salmon !important;
+    }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+h2 {
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+}
+
+h4 {
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    text-align: center;
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+	<style>
+	#container{
+	
+	margin : 0 auto;
+    overflow:hidden;
+    }
+    #tittlelogo {
+    height: 100px;
+    text-align:center;
+    }
+
+    #headermain{
+    width: 100%;
+    height: auto;
+    }
+    #headermain div{
+    display:inline-table;
+    }
+
+    #header ul {
+    list-style-type: none;
+
+    }
+    #header ul li {
+        display: inline-table;
+        padding: 20px;
+        color: black;
+    }
+    #header ul li a {
+    text-align:center;
+    text-decoration:none;
+    display : block;
+    color:black;
+    
+    }
+    #header ul li:hover {
+    background-color:orangered;
+    }
+   .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000000000000;
+    background-color: antiquewhite;
+    width: 180px;
+    transition: 0.6s;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: -100px;
+    line-height:50px;
+    }
+    .sub-menu li {
+ 
+        display: block;
+        padding: 10px;
+        width:150px;
+        margin:0 auto;
+    }
+    .sub-menu li a {
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+       
+    }
+    .sub-menu li:hover {
+        background-color: navajowhite;
+    }
+    .icon{
+    width:40px;
+    height:40px;
+    }
+    .search input {
+        width: 180px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 10px;
+        outline: none;
+        padding: 12px 14px;
+        transition: 0.6s ease-in-out;
+    }
+    .search input:focus {
+            width: 230px;
+            background-color: floralwhite;
+        }
+    
+    #body{
+	padding-top:50px;
+	width: 90%;
+	text-align:center;
+	margin : 0 auto;
+    }
+    .bodyimg{
+	width: 237px;
+	height : 237px;
+     }
+    #body ul{
+	list-style-type:none;
+
+}
+#body ul li {
+	display:inline-table;
+	padding: 20px;
+}
+#body1{
+	width : 98%;
+	height : 1000px;
+	overflow:auto;
+    font-size:18px;
+	text-align:justify;
+	line-height: 2.5;
+}
+#body12{
+	float : right;
+}
+.info {
+	float : left; 
+	width : 75%;  
+	line-height: 1.5;
+	text-align:left;
+}
+
+#banner{
+	height:250px;
+}
+#mnu ul li a {
+    text-align:center;
+    text-decoration:none;
+	font-size:18px;
+    display : block;
+    color:black;
+	}
+#section2{
+	padding-top:40px;
+    height:1200px;
+    width:100%;
+	float:left;
+}
+#sectiontitle{
+	height : 50px;	
+	width : 1300px;
+	padding: 20px;
+}
+#leftsc {
+    text-decoration: blink;
+    padding: 20px;
+	width: 95%;
+	float: left;
+	padding-top: 70px;
+}
+#leftsc a {
+		font-size: 18px;
+		text-align: center;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+
+#content-container-sc2{
+    float:right;
+    width:100%;
+    overflow:hidden;
+}
+
+    #content-container-sc2 ul li {
+        width: 20%;
+        display:inline-table;
+    }
+
+#row1-content-sc2 {
+    width: 100%;
+    
+}
+
+.info2 {
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    text-align:left;
+    font-size:16px;
+}
+
+#additional{
+	
+}
+
+#footer{
+    height:auto;
+    width:1700px;
+    text-align:left;
+    margin : 0 auto;
+}
+
+
+div.lienhe {
+    float: left;
+    padding: 0px 30px;
+    width: 20%;
+    height: 331px;
+    background-color: #000;
+    color: #CCC;
+}
+.lienhe ul{
+    list-style-type:none;
+}
+
+    div.lienhe > ul > li {
+        padding: 8px;
+    }
+
+div.chinhsach {
+    float: left;
+    width: 20%;
+    height: 331px;
+    background-color: #000;
+    
+}
+    div.chinhsach ul li a ,h3{
+        color: white;
+        text-decoration : none;
+        display:block;
+        padding : 10px;
+    }
+
+
+div.lienket {
+    float: left;
+    width: 20%;
+    height: 331px;
+    background-color: #000;
+    color: #CCC;
+}
+
+    div.lienket > ul > li {
+        padding: 8px;
+        display: block;
+    }
+
+div.chinhsach > ul {
+    list-style-type: none;
+}
+
+div.logo {
+    float: left;
+    width: 35%;
+    height : 331px;
+    background-color: #000;
+}
+
+    .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    transition: background-color 0.5s ease;
+    }
+    /* Ẩn các slider */
+    .mySlides {
+    display: none;
+    }
+    /* Định dạng nội dung Caption */
+
+
+     /* định dạng các chấm chuyển đổi các slide */
+    .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+    }
+    /* khi được hover, active đổi màu nền */
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+     }
+
+    @-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+    }
+
+    @keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+    }
+	#box{margin: auto; 
+    }	
+	#order-box{margin: auto;
+	}
+	#order-button{
+	background:black; list-style:none; position:relative;height:60px; width:160px;  padding:0;}
+    #order-button>li>a{padding-left:20px; padding-right:20px; color:white; font-size:18px;  text-decoration:none;}
+	#order-button>li>a:hover{color:black;}
+	#order-button>li:hover{color:yellow;background:#CCC;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="headermain">
+            <div id="header">
+                <ul>
+				    <li> <a href="#"><b><h2>HOME</h2></a></li>
+                    <li> <a href="#">THỜI TRANG</a></li>
+                    <li><a href="LAMDEP.html">LÀM ĐẸP</a></li>
+                    <li><a href="#">GIẢI TRÍ</a></li>
+                    <li><a href="#">SỐNG</a></li>
+                    <li><a href="#">E-MAGAZINE</a></li>
+                    <li><a href="#">VIDEO</a></li>
+                    <li><a href="#">GALLERY</b></a></li>
+					<li class="search" style=" border-radius:20%">
+                        <input type="text" placeholder="Tìm kiếm..." />
+				    <li><a href="#" target="_blank" ><img style="width:40px;height:40px;" src="..\hinh\facebook_circle.png"/></a></li>
+                    <li><a href="#" target="_blank"><img style="width:40px;height:40px;" src="..\hinh\instagram_circle.png"/></a></li>
+                    <li><a href="#" target="_blank" ><img style="width:40px;height:40px;" src="..\hinh\youtube_circle.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="body">
+            <div id="section 1">
+                <a style="text-align:center; font-size : 50px;">THỜI TRANG</a>					      
+				<div id="mnu">
+			    <ul>
+				<hr />
+                    <li> <a href="#"><i>#OOTD</a></li>
+                    <li> <a href="#">BỘ SƯU TẬP</a></li>
+                    <li><a href="#">MIX & MATCH</a></li>
+                    <li><a href="#">THĂM DÒ/SỰ KIỆN</a></li>
+                    <li><a href="#">XU HƯỚNG</i></a></li>
+						<hr /> 
+				</ul>
+			</div>                               
+            </div>
+			<div id="section2">
+                <div id="content-container-sc2">
+                    <ul>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_1.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#THỜI TRANG</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Marks & Spencer – thương hiệu thời trang cao cấp từ Anh quốc giảm giá “khủng” lên đến 50% đến hết 1/5
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_2.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Hoa hậu Tiểu Vy hóa thành nàng thơ mới trong show diễn “Infinity” của NTK Adrian Anh Tuấn
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_3.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Cùng Lan Khuê “dạo chơi” trên rặng đá bên bờ biển Phan Rang trong các thiết kế của Chanel
+                                </a>
+                            </div>
+                        </li>
+                        
+						
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_4.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    BlackPink “đổ bộ” Coachella, gợi cảm không kém cạnh Kendall, Gigi và dàn mẫu Victoria’s Secret
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_5.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Ariana Grande tiếp tục khiến dân chúng trầm trồ với phong cách thời trang đỉnh cao tại Coachella 2019
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_6.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Xuýt xoa trước loạt street style “sang chảnh”, sành điệu của Thanh Hằng, Châu Bùi và dàn sao Việt
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_1.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#THỜI TRANG</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Marks & Spencer – thương hiệu thời trang cao cấp từ Anh quốc giảm giá “khủng” lên đến 50% đến hết 1/5
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_2.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Hoa hậu Tiểu Vy hóa thành nàng thơ mới trong show diễn “Infinity” của NTK Adrian Anh Tuấn
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_3.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Cùng Lan Khuê “dạo chơi” trên rặng đá bên bờ biển Phan Rang trong các thiết kế của Chanel
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_4.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    BlackPink “đổ bộ” Coachella, gợi cảm không kém cạnh Kendall, Gigi và dàn mẫu Victoria’s Secret
+                                </a>
+                            </div>
+                        </li>
+						<li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_5.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Ariana Grande tiếp tục khiến dân chúng trầm trồ với phong cách thời trang đỉnh cao tại Coachella 2019
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_6.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Xuýt xoa trước loạt street style “sang chảnh”, sành điệu của Thanh Hằng, Châu Bùi và dàn sao Việt
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>               
+            </div>
+			<hr />
+	<div 
+        <div class="slideshow-container">
+            <h2></h2>
+            <div class="mySlides fade">
+                <img src="../hinh\MGZ1.png" style="width:100%;height:500px;">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../hinh\MGZ2.png" style="width:100%;height:500px;">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../hinh\MGZ3.png" style="width:100%;height:500px;">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../hinh\MGZ4.png" style="width:100%;height:500px;">
+                <div class="text"></div>
+            </div>
+			<div class="mySlides fade">
+                <img src="../hinh\MGZ5.png" style="width:100%;height:500px;">
+                <div class="text"></div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+		<div id="box">
+                        <div id="order-box">
+                            <h2><span>Issue 243</span></h2>
+                            <h1>Tạp chí Hit số tháng 4</h1>
+                            <p>Đón đọc tạp chí Hit số 243 phát hành tháng 4/2019 </p>
+                            <ul id="order-button"> <li>   <a href="#">ĐẶT BÁO</a>  </li> </ul>
+                        </div>
+        </div>
+            <div id="section2">			
+                <div id="sectiontitle">
+				    <hr/>
+                    <a style=" text-align :left; float:left; font-size : 25px;">BÀI VIẾT CÙNG CHUYÊN MỤC</a>    
+					<br><br><br>
+                <div style=" text-align :left; float:left;" id="content-container-sc2">
+                    <ul>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_1.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#THỜI TRANG</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Marks & Spencer – thương hiệu thời trang cao cấp từ Anh quốc giảm giá “khủng” lên đến 50% đến hết 1/5
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_2.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Hoa hậu Tiểu Vy hóa thành nàng thơ mới trong show diễn “Infinity” của NTK Adrian Anh Tuấn
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_3.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#BỘ SƯU TẬP</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Cùng Lan Khuê “dạo chơi” trên rặng đá bên bờ biển Phan Rang trong các thiết kế của Chanel
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_4.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    BlackPink “đổ bộ” Coachella, gợi cảm không kém cạnh Kendall, Gigi và dàn mẫu Victoria’s Secret
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_5.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Ariana Grande tiếp tục khiến dân chúng trầm trồ với phong cách thời trang đỉnh cao tại Coachella 2019
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_6.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Xuýt xoa trước loạt street style “sang chảnh”, sành điệu của Thanh Hằng, Châu Bùi và dàn sao Việt
+                                </a>
+                            </div>
+                        </li>
+						<li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_4.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    BlackPink “đổ bộ” Coachella, gợi cảm không kém cạnh Kendall, Gigi và dàn mẫu Victoria’s Secret
+                                </a>
+                            </div>
+                        </li>
+						<li>
+                            <div id="row1-content-sc2">
+                                <img class="bodyimg" src="..\hinh\content_5.png" />
+                                <a class="info2" href="#"><pren style="text-align:left;">#OOTD</pren></a>
+                                <br />
+                                <br />
+                                <a h href="#" class="info2">
+                                    Ariana Grande tiếp tục khiến dân chúng trầm trồ với phong cách thời trang đỉnh cao tại Coachella 2019
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                 </div>
+				</div> 
+                <div id="banner">
+                <img style="width : 1070px; height : 250px;" src="..\hinh\bodybanner.png" />
+                </div>					
+            </div>
+        </div>
+        <div id="footer">
+            <div class="lienhe">
+                <h3>Trụ sở chính </h3>
+                <ul>
+                    <li>Tầng 4 Tòa nhà 123, 123 Võ Văn Tần, phường 6, quận 3, Tp. HCM  </li>
+                    <li>Phone: 0986287253</li>
+                    <li>Email: baothoithuong@gmail.com</li>
+                </ul>
+            </div>
+            <div class="chinhsach">
+                <h3> CÁC TRANG LIÊN KẾT</h3>
+                <ul>
+                    <li><a href="#">Thời Trang</a></li>
+                    <li><a href="#">Đẹp </a></li>
+                    <li><a href="#">Giải trí</a></li>
+                    <li><a href="#">Sống </a></li>
+                    <li><a href="#">E-Magazine</a></li>
+                </ul>
+            </div>
+            <div class="lienket">
+                <h3>Liên Hệ </h3>
+                <ul>
+                    <li>Trách nhiệm quản lý nội dung : </li>
+                    <li>Ứng Ngọc Sơn</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <h5 style="color:white;">@</h5>
+                <ul>
+                    <li><img style="float:left ;height:160px; width:400px;" src=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="..\scripts\script.js">
+    </script>
+</body>
+</html>
