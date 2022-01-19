@@ -3,7 +3,97 @@
     <head>
         <title>Shop</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            li {
+                color: red;
+            }
+            .paragraph1 {
+                color: rgb(166, 255, 0);
+            }
+            .paragraph1.p1 {
+                color: rgb(76, 0, 255);
+            }
+            .parent .children {
+                color: orange
+            }
+            a::after {
+                content: " (" attr(href)")" /* css functions attr */
+            }
+            .paragraph1.p1::after {
+                content: " xin chao cac dan choi||";
+            }
+        </style>
     </head>
     <body>
+        <a href="https://fullstack.edu.vn/">Học HTML tại F8</a>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <ul>
+            <li>HTML, CSS từ zero đến Hero</li>
+            <li>Thiết kế web responsive</li>
+            <li>Lập trình Javascript cơ bản</li>
+            <li>Lập trình Javascript nâng cao</li>
+            <li>Nhiều khóa học khác từ Front-end, tới Back-end, Mobile, Devops</li>
+        </ul>
+        <ol>
+            <li>HTML, CSS từ zero đến Hero</li>
+            <li>Thiết kế web responsive</li>
+            <li>Lập trình Javascript cơ bản</li>
+            <li>Lập trình Javascript nâng cao</li>
+            <li>Nhiều khóa học khác từ Front-end, tới Back-end, Mobile, Devops</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th class="paragraph1">#</th>
+                    <th class="paragraph1 p1">thu 2</th>
+                    <th class="paragraph1 p1">thu 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="parent">
+                    <td class="children">Tiet 1</td>
+                    <td class="children">chao co</td>
+                    <td class="children">toan</td>
+                </tr>
+                <tr class="parent">
+                    <td class="children">Tiet 2</td>
+                    <td>chao co2</td>
+                    <td>toan2</td>
+                </tr>
+                <tr>
+                    <td>Tiet 3</td>
+                    <td>chao co3</td>
+                    <td>toan3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            Tên đăng nhập<input type="text">
+            Mật khẩu<input type="password">
+        </div>
+
+        <div>
+            <input name="gender" type="radio">nam
+            <input name="gender" type="radio">nu
+            <input name="gender" type="radio">khác
+        </div>
+        <div>
+            <input type="checkbox" name="answer" id="">đáp án 1
+            <input type="checkbox" name="answer" id="">đáp án 2
+            <input type="checkbox" name="answer" id="">đáp án 3
+            <input type="checkbox" name="answer" id="">đáp án 4
+        </div>
+        <div>
+            <input type="submit" value="Đăng kí">
+            <button type="submit">Đăng ký</button>
+        </div>
+
+<h1 title="HTML, CSS từ zero đến Hero">Học về attribute trong HTML</h1>
+<a href="https://fullstack.edu.vn/">Học HTML tại F8</a>
+<img src="https://img.youtube.com/vi/0SJE9dYdpps/sddefault.jpg" title="Lập trình Javascript cơ bản" width="250" alt="anh co chu">
     </body>
 </html>
